@@ -47,12 +47,12 @@ DenseNet121 ──┘                  ↓
 
 | File | Description |
 | :--- | :--- |
-| **[📜 Base_Research_Paper.pdf](Base_Research_Paper.pdf)** | IEEE baseline research paper. |
-| **[📑 Advanced_Technical_Report.pdf](Advanced_Technical_Report.pdf)** | Our 15-page deep-dive technical report. |
-| **[🎓 Plant_Disease_Enhanced_Tutorial.ipynb](Plant_Disease_Enhanced_Tutorial.ipynb)** | Fully annotated pipeline (Training Walkthrough). |
-| **[🧠 best_plant_disease_model.pth](best_plant_disease_model.pth)** | Trained Meta-Ensemble weights (Git LFS). |
-| **[📗 class_names_enhanced.json](class_names_enhanced.json)** | Disease → Causes → Solutions mapping. |
-| **[🚀 CV_Final_Evaluation.ipynb](CV_Final_Evaluation.ipynb)** | Production-ready interactive prediction portal. |
+| **[📜 Base_Research_Paper.pdf](research/Base_Research_Paper.pdf)** | IEEE baseline research paper. |
+| **[📑 Advanced_Technical_Report.pdf](docs/Advanced_Technical_Report.pdf)** | Our 15-page deep-dive technical report. |
+| **[🎓 Plant_Disease_Enhanced_Tutorial.ipynb](notebooks/Plant_Disease_Enhanced_Tutorial.ipynb)** | Fully annotated pipeline (Training Walkthrough). |
+| **[🧠 best_plant_disease_model.pth](model_weights/best_plant_disease_model.pth)** | Trained Meta-Ensemble weights (Git LFS). |
+| **[📗 class_names_enhanced.json](metadata/class_names_enhanced.json)** | Disease → Causes → Solutions mapping. |
+| **[🚀 CV_Final_Evaluation.ipynb](notebooks/CV_Final_Evaluation.ipynb)** | Production-ready interactive prediction portal. |
 | **[⚙️ requirements.txt](requirements.txt)** | Dependency list for environment reproduction. |
 | **[⚖️ LICENSE](LICENSE)** | MIT Open-Source License. |
 
@@ -61,7 +61,7 @@ DenseNet121 ──┘                  ↓
 ## 🚦 Quick Start
 1. Clone the repository: `git clone https://github.com/nishantrs0404/Crops_Disease_Detection.git`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run **`CV_Final_Evaluation.ipynb`** to diagnose symptoms and get remedies.
+3. Open **`notebooks/CV_Final_Evaluation.ipynb`** to diagnose symptoms and get remedies.
 
 ---
 
