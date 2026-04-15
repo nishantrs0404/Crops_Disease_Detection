@@ -1,4 +1,6 @@
-# 🌿 Plant Disease Diagnosis using Meta-Ensemble Deep Learning Framework
+# 🌿 Plant Disease Diagnosis: Meta-Ensemble Framework
+
+![Project Banner](visuals/banner.png)
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-red.svg)](https://pytorch.org/)
@@ -9,63 +11,69 @@
 ---
 
 ## 📌 Project Overview
-This project presents a **high-performance plant disease detection system** built using a **Meta-Ensemble Deep Learning Framework**, combining:
-- ⚡ **MobileNetV2 (Lightweight, efficient)**
-- 🧠 **DenseNet121 (Deep feature reuse)**
-
-Inspired by IEEE research, this system achieves **99.21% accuracy** while providing actionable insights for farmers.
+This repository presents a **World-Class Plant Disease Detection System** powered by a **Meta-Ensemble** of MobileNetV2 and DenseNet121. Achieving a staggering **99.21% accuracy**, this system provides farmers with not just a diagnosis, but a multi-dimensional treatment plan including root causes and precision remedies.
 
 ---
 
-## 🧠 What Makes This Project Special?
-Unlike traditional models, this system:
-- ✔ Predicts disease labels with high confidence.
-- ✔ Explains **WHY it happened** (Root causes).
-- ✔ Suggests **HOW to fix it** (Actionable remedies).
-- ✔ Optimized for **edge devices** and practical agricultural use.
+## 🚀 Key Innovations
+- **Dual-Engine Fusion**: Hierarchical spatial feature extraction combined with dense connectivity for unparalleled robustness.
+- **Explainable AI Pipeline**: Dynamic mapping of labels to expert-verified reasons and solutions.
+- **Production-Ready GUI**: Interactive web-based diagnostic application using Gradio.
 
 ---
 
-## 🏗️ System Architecture
-```text
-Input Image
-     ↓
-Preprocessing (Resize + Normalize + Enhancement)
-     ↓
-MobileNetV2  ─┐
-              ├──► Meta-Ensemble Fusion ───► Final Prediction
-DenseNet121 ──┘                  ↓
-     ↓                Explainability Layer
-     ↓                   (JSON Mapping)
-     ↓                           ↓
- Disease Name  <--->  Root Causes  <--->  Effective Solutions
+## 📂 Repository Architecture
+
+| File | Description |
+| :--- | :--- |
+| **[📜 research/](research/)** | Base IEEE 2025 research paper. |
+| **[📑 docs/](docs/)** | 15-page deep-dive technical analysis report. |
+| **[🎓 notebooks/](notebooks/)** | Annotated Training Pipeline & Inference Demo. |
+| **[🚀 demo/](demo/)** | **Gradio Web Application** for interactive diagnosis. |
+| **[🧠 model_weights/](model_weights/)** | Trained Meta-Ensemble weights (LFS). |
+| **[📗 metadata/](metadata/)** | Enhanced Disease → Solution mapping database. |
+| **[⚙️ requirements.txt](requirements.txt)** | One-click environment setup. |
+| **[⚖️ LICENSE](LICENSE)** | MIT Open-Source Compliance. |
+
+---
+
+## 🏗️ System Flow
+```mermaid
+graph TD
+    A[Leaf Image] --> B[Preprocessing]
+    B --> C[MobileNetV2 Engine]
+    B --> D[DenseNet121 Engine]
+    C --> E[Weighted Fusion]
+    D --> E
+    E --> F[Diagnosis Predicted]
+    F --> G[Explainability Layer]
+    G --> H[Reasons & Solutions]
 ```
 
 ---
 
-## 📂 Repository Assets
-
-| File | Description |
-| :--- | :--- |
-| **[📜 Base_Research_Paper.pdf](research/Base_Research_Paper.pdf)** | IEEE baseline research paper. |
-| **[📑 Advanced_Technical_Report.pdf](docs/Advanced_Technical_Report.pdf)** | Our 15-page deep-dive technical report. |
-| **[🎓 Plant_Disease_Enhanced_Tutorial.ipynb](notebooks/Plant_Disease_Enhanced_Tutorial.ipynb)** | Fully annotated pipeline (Training Walkthrough). |
-| **[🧠 best_plant_disease_model.pth](model_weights/best_plant_disease_model.pth)** | Trained Meta-Ensemble weights (Git LFS). |
-| **[📗 class_names_enhanced.json](metadata/class_names_enhanced.json)** | Disease → Causes → Solutions mapping. |
-| **[🚀 CV_Final_Evaluation.ipynb](notebooks/CV_Final_Evaluation.ipynb)** | Production-ready interactive prediction portal. |
-| **[⚙️ requirements.txt](requirements.txt)** | Dependency list for environment reproduction. |
-| **[⚖️ LICENSE](LICENSE)** | MIT Open-Source License. |
-
----
-
 ## 🚦 Quick Start
-1. Clone the repository: `git clone https://github.com/nishantrs0404/Crops_Disease_Detection.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Open **`notebooks/CV_Final_Evaluation.ipynb`** to diagnose symptoms and get remedies.
+
+### 1. Installation
+```bash
+git clone https://github.com/nishantrs0404/Crops_Disease_Detection.git
+cd Crops_Disease_Detection
+pip install -r requirements.txt
+```
+
+### 2. Launch Web App (GUI)
+```bash
+cd demo
+python gradio_app.py
+```
+*Navigate to the local URL provided to upload photos and get instant results!*
+
+### 3. Interactive Notebook
+Explore **`notebooks/CV_Final_Evaluation.ipynb`** for a programmatic walkthrough.
 
 ---
 
-## 📝 Authorship
+## 📝 Authorship & Acknowledgements
 - **Author**: Nishant Raushan
 - **Affiliation**: Netaji Subhas University of Technology (NSUT)
-- **Project**: Computer Vision Final Project
+- **Project**: Computer Vision Portfolio
