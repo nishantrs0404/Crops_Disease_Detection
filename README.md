@@ -26,8 +26,8 @@ This repository presents a **World-Class Plant Disease Detection System** powere
 
 | File | Description |
 | :--- | :--- |
-| **[📜 research/](research/)** | Latest Academic Research Paper (`Our_Research_Paper.pdf`). |
-| **[📑 docs/](docs/)** | 15-page deep-dive technical analysis report. |
+| **[📜 research/](research/)** | Base IEEE 2025 research paper. |
+| **[📑 docs/](docs/)** | Latest Academic Research Paper (`Advanced_Technical_Report.pdf`). |
 | **[🎓 notebooks/](notebooks/)** | Annotated Training Pipeline & Inference Demo. |
 | **[🚀 demo/](demo/)** | **Gradio Web Application** for interactive diagnosis. |
 | **[🧠 model_weights/](model_weights/)** | Trained Meta-Ensemble weights (LFS). |
