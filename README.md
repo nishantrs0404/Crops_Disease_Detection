@@ -26,7 +26,7 @@ This repository presents a **World-Class Plant Disease Detection System** powere
 
 | File | Description |
 | :--- | :--- |
-| **[📜 research/](research/)** | Base IEEE 2025 research paper. |
+| **[📜 research/](research/)** | Latest Academic Research Paper (`Our_Research_Paper.pdf`). |
 | **[📑 docs/](docs/)** | 15-page deep-dive technical analysis report. |
 | **[🎓 notebooks/](notebooks/)** | Annotated Training Pipeline & Inference Demo. |
 | **[🚀 demo/](demo/)** | **Gradio Web Application** for interactive diagnosis. |
