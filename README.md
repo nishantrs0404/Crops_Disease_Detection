@@ -37,6 +37,13 @@ This repository presents a **World-Class Plant Disease Detection System** powere
 
 ---
 
+## 🎨 Dataset Discovery
+Our model is trained on a diverse subset of the **PlantVillage Dataset**, covering 38 distinct classes across 14 plant species.
+
+![Dataset Gallery](visuals/gallery.png)
+
+---
+
 ## 🏗️ System Flow
 ```mermaid
 graph TD
@@ -49,6 +56,15 @@ graph TD
     F --> G[Explainability Layer]
     G --> H[Reasons & Solutions]
 ```
+
+---
+
+## 🔮 Future Evolution & Roadmap
+To elevate this project further, we are exploring:
+- **🛰️ Drone Integration**: Real-time canopy monitoring using the Meta-Ensemble.
+- **📱 Mobile Deployment**: Converting model weights to CoreML/TFLite for offline smartphone use.
+- **☁️ Cloud Streaming**: Deploying as an API for agricultural sensor networks.
+- **🌍 Multilingual Solutions**: Translating diagnostic reports into regional languages.
 
 ---
 
