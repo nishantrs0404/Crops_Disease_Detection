@@ -7,12 +7,12 @@ from PIL import Image
 import json
 import os
 
-# --- Configuration ---
+# Configuration
 NUM_CLASSES = 38
 PTH_PATH = '../model_weights/best_plant_disease_model.pth'
 JSON_PATH = '../metadata/class_names_enhanced.json'
 
-# --- Model Definition (Modular) ---
+# Model Definition (Modular) 
 class PlantDiseaseEnsemble(nn.Module):
     def __init__(self, num_classes=38):
         super(PlantDiseaseEnsemble, self).__init__()
@@ -28,7 +28,7 @@ class PlantDiseaseEnsemble(nn.Module):
     def forward(self, x):
         return (0.635 * self.model_A(x)) + (0.365 * self.model_B(x))
 
-# --- Resource Loading ---
+# Resource Loading
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = PlantDiseaseEnsemble(num_classes=NUM_CLASSES)
 
@@ -43,7 +43,7 @@ with open(JSON_PATH, 'r') as f:
 
 class_names = sorted(list(metadata.keys()))
 
-# --- Inference Logic ---
+# Inference Logic 
 def predict_disease(input_img):
     if input_img is None:
         return "Please upload an image.", ""
@@ -66,16 +66,16 @@ def predict_disease(input_img):
     
     # Format Results
     result_text = f"## Diagnosis: {prediction} ({conf.item()*100:.1f}%)"
-    details = f"📍 **Plant**: {info.get('plant', 'N/A')}\n"
-    details += f"🔴 **Disease**: {info.get('disease', 'N/A')}\n\n"
-    details += "### 🔍 Reasons:\n" + "\n".join([f"- {r}" for r in info.get('reasons', [])]) + "\n\n"
-    details += "### 🛠️ Solutions:\n" + "\n".join([f"✅ {s}" for s in info.get('solutions', [])])
+    details = f" **Plant**: {info.get('plant', 'N/A')}\n"
+    details += f" **Disease**: {info.get('disease', 'N/A')}\n\n"
+    details += "###  Reasons:\n" + "\n".join([f"- {r}" for r in info.get('reasons', [])]) + "\n\n"
+    details += "###  Solutions:\n" + "\n".join([f" {s}" for s in info.get('solutions', [])])
     
     return result_text, details
 
-# --- UI Interface ---
+# UI Interface 
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
-    gr.Markdown("# 🌿 Plant Disease Meta-Ensemble Diagnosis")
+    gr.Markdown("#  Plant Disease Meta-Ensemble Diagnosis")
     gr.Markdown("Upload a leaf image to receive a high-precision AI diagnosis and treatment plan.")
     
     with gr.Row():
