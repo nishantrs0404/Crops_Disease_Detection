@@ -41,7 +41,7 @@ Our model is trained on a robust, expanded version of the **PlantVillage Dataset
 ### 📊 Dataset Benchmarking
 We transitioned from the standard 26-class PlantVillage set to a broader **New Plant Diseases Dataset**, introducing more complexity and real-world diversity.
 
-![Dataset Comparison](visuals/Screenshot%20202759.png)
+![Dataset Comparison](visuals/dataset_comparison.png)
 *Fig. 1 — Comparative analysis between the base paper dataset and our expanded framework.*
 
 ### 📈 Class Distribution & Balancing
@@ -80,7 +80,7 @@ Beyond raw prediction, our system utilizes a **Heuristic Knowledge Mapping** lay
 - **The Result**: Provides farmers with *actionable intelligence* rather than just a technical class name.
 
 ### ⚔️ Performance Uplift Study
-![Sub-Model Performance](visuals/Screenshot%20201702.png)
+![Sub-Model Performance](visuals/ablation_study.png)
 *Fig. 4 — Evaluating individual sub-models vs. the Meta-Ensemble. The ensemble consistently bridges the gap on complex classes where constituent models fluctuate.*
 
 ---
@@ -90,11 +90,11 @@ Beyond raw prediction, our system utilizes a **Heuristic Knowledge Mapping** lay
 ### 🥇 Main Evaluation
 The proposed model sets a new state-of-the-art (SOTA) by achieving a flat **99.86%** across all standard metrics.
 
-![Main Performance Comparison](visuals/Screenshot%20205151.png)
+![Main Performance Comparison](visuals/main_benchmark.png)
 *Fig. 5 — Our Meta-Ensemble vs. the Base Paper results. **Meaning:** This chart validates the definitive superiority of our fusion strategy over traditional ensembles.*
 
 ### 📋 Detailed Metrics Breakdown
-![Detailed Metrics](visuals/Screenshot%20202938.png)
+![Detailed Metrics](visuals/metrics_table.png)
 *Fig. 6 — Precision, Recall, and F1-Score for every model variant. The Meta-Ensemble achieves perfect balance, minimizing both False Positives and False Negatives.*
 
 ---
